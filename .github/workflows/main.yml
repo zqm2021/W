@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           persist-credentials: false
 
       - name: sync 6dylan6-jdpro
-        uses: repo-sync/github-sync@v2
+        uses: repo-sync/github-sync@v3
         if: env.PAT
         with:
           source_repo: "https://github.com/6dylan6/jdpro.git"
