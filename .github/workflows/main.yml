@@ -19,7 +19,7 @@ jobs:
           persist-credentials: false
 
       - name: sync 6dylan6-jdpro
-        uses: repo-sync/github-sync@v3
+        uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
           source_repo: "https://github.com/6dylan6/jdpro.git"
